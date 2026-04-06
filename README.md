@@ -1,6 +1,6 @@
 # Sql-Data-Warehouse-Project
 Building a modern data warehouse with SQL Server,including ETL processes ,data modeling and analytics
-#🚀 Overview
+# 🚀 Overview
 
 This project demonstrates how to build a modern data warehouse using SQL Server, focusing on:
 
@@ -12,8 +12,8 @@ Analytical reporting
 The architecture follows a Medallion Architecture approach:
 👉 Bronze → Silver → Gold
 
-#🏗️ Architecture
-#🥉 Bronze Layer (Raw Data)
+# 🏗️ Architecture
+# 🥉 Bronze Layer (Raw Data)
 Stores raw data as-is from source systems
 No transformations applied
 Acts as a data lake / staging layer
@@ -29,7 +29,7 @@ Example Tables:
 bronze_customers_raw
 bronze_orders_raw
 bronze_products_raw
-#🥈 Silver Layer (Cleaned & Transformed Data)
+# 🥈 Silver Layer (Cleaned & Transformed Data)
 Data is cleaned, standardized, and validated
 Handles missing values, duplicates, and inconsistencies
 Prepares data for analytics
@@ -45,7 +45,7 @@ Example Tables:
 silver_customers
 silver_orders
 silver_products
-#🥇 Gold Layer (Business-Ready Data)
+# 🥇 Gold Layer (Business-Ready Data)
 Aggregated and modeled for analytics and reporting
 Designed using fact and dimension tables
 
@@ -61,7 +61,7 @@ fact_sales
 dim_customers
 dim_products
 dim_date
-3🔄 ETL Process
+# 🔄 ETL Process
 1. Extract
 Load data from source systems into Bronze layer
 Tools: SQL Server Integration Services (SSIS) / BULK INSERT
@@ -71,7 +71,7 @@ Apply business rules
 3. Load
 Aggregate and model data into Gold layer
 Prepare for analytics
-#🧱 Data Modeling
+# 🧱 Data Modeling
 Star Schema used in Gold layer:
 Fact table: transactional data (e.g., sales)
 Dimension tables: descriptive attributes (customer, product, date)
